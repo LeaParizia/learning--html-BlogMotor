@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ruta Motor - Blog de autos, novedades, pruebas y cultura automotriz."
+    />
+    <title>Ruta Motor | Blog de Autos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="./index.html"
+          ><i class="bi bi-speedometer2 me-2"></i>RUTA MOTOR</a
+        >
+        <button class="navbar-toggler" type="button" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-outline-light btn-sm" href="./pages/login.html"
+                ><i class="bi bi-person me-1"></i>Login</a
+              >
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <label for="subscribeToggle" class="btn btn-warning btn-sm"
+                ><i class="bi bi-envelope me-1"></i>Suscribirme</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-slider">
+      <input
+        class="slider-toggle"
+        type="radio"
+        name="slider"
+        id="slide1"
+        checked
+      />
+      <input class="slider-toggle" type="radio" name="slider" id="slide2" />
+      <input class="slider-toggle" type="radio" name="slider" id="slide3" />
+      <div id="motorCarousel" class="carousel slide css-slider">
+        <div class="slider-controls">
+          <label for="slide1">1</label>
+          <label for="slide2">2</label>
+          <label for="slide3">3</label>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item slide-one">
+            <img
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=85"
+              class="d-block w-100"
+              alt="Auto deportivo"
+            />
+            <div class="carousel-caption text-start">
+              <span class="badge bg-warning text-dark mb-2">ESPECIAL</span>
+              <h1 class="display-5 fw-bold">Pasión por los autos</h1>
+              <p class="lead">
+                Noticias, tecnología, pruebas y cultura automotriz.
+              </p>
+              <a href="./pages/404.html" class="btn btn-warning"
+                >Leer especial</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item slide-two">
+            <img
+              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85"
+              class="d-block w-100"
+              alt="Auto moderno en carretera"
+            />
+            <div class="carousel-caption">
+              <h2 class="display-6 fw-bold">Tecnología que cambia la ruta</h2>
+              <p>Conocé las tendencias que están transformando la movilidad.</p>
+            </div>
+          </div>
+          <div class="carousel-item slide-three">
+            <img
+              src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1800&q=85"
+              class="d-block w-100"
+              alt="Interior de automóvil"
+            />
+            <div class="carousel-caption text-end">
+              <h2 class="display-6 fw-bold">
+                El auto también es una experiencia
+              </h2>
+              <p>Diseño, confort y detalles que hacen la diferencia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container py-5">
+      <div class="row g-4">
+        <section class="col-lg-8">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <span class="section-kicker">ACTUALIDAD</span>
+              <h2 class="fw-bold mb-0">Últimas entradas</h2>
+            </div>
+          </div>
+
+          <div id="posts">
+            <article class="card post-card border-0 shadow-sm mb-4">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img
+                    src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80"
+                    class="post-img"
+                    alt="Auto clásico"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body p-4">
+                    <span class="badge text-bg-dark mb-2">Clásicos</span>
+                    <h3 class="h4 fw-bold">
+                      Los autos clásicos que nunca pasan de moda
+                    </h3>
+                    <p class="text-secondary">
+                      Diseño, historia y personalidad: por qué algunos modelos
+                      siguen despertando admiración décadas después.
+                    </p>
+                    <a href="./pages/404.html" class="btn btn-dark"
+                      >Ver más <i class="bi bi-arrow-right ms-1"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card post-card border-0 shadow-sm mb-4">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img
+                    src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=80"
+                    class="post-img"
+                    alt="Auto deportivo"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body p-4">
+                    <span class="badge text-bg-dark mb-2">Tecnología</span>
+                    <h3 class="h4 fw-bold">
+                      Qué tecnologías están cambiando los autos modernos
+                    </h3>
+                    <p class="text-secondary">
+                      Asistencias a la conducción, conectividad, electrificación
+                      y nuevas formas de interactuar con el vehículo.
+                    </p>
+                    <a href="./pages/404.html" class="btn btn-dark"
+                      >Ver más <i class="bi bi-arrow-right ms-1"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card post-card border-0 shadow-sm mb-4">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img
+                    src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=900&q=80"
+                    class="post-img"
+                    alt="Auto en ruta"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body p-4">
+                    <span class="badge text-bg-dark mb-2">Consejos</span>
+                    <h3 class="h4 fw-bold">
+                      Claves para preparar el auto antes de un viaje
+                    </h3>
+                    <p class="text-secondary">
+                      Una revisión sencilla puede ayudarte a viajar con mayor
+                      tranquilidad y detectar problemas antes de salir.
+                    </p>
+                    <a href="./pages/404.html" class="btn btn-dark"
+                      >Ver más <i class="bi bi-arrow-right ms-1"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <nav aria-label="Paginación">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="./pages/404.html">Anterior</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="./pages/404.html">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="./pages/404.html">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="./pages/404.html">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="./pages/404.html">Siguiente</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <aside class="col-lg-4">
+          <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold">
+                <i class="bi bi-search me-2"></i>Buscar artículos
+              </h3>
+              <form id="searchForm" action="./pages/404.html" method="get">
+                <div class="input-group">
+                  <input
+                    id="searchInput"
+                    class="form-control"
+                    type="search"
+                    placeholder="Ej. clásicos"
+                  />
+                  <button class="btn btn-dark" type="submit">Buscar</button>
+                </div>
+              </form>
+              <small
+                id="searchMessage"
+                class="text-secondary d-block mt-2"
+              ></small>
+            </div>
+          </div>
+
+          <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold">Categorías</h3>
+              <div class="list-group list-group-flush">
+                <a
+                  href="./pages/404.html"
+                  class="list-group-item list-group-item-action px-0"
+                  >Actualidad
+                  <span class="badge bg-secondary float-end">12</span></a
+                >
+                <a
+                  href="./pages/entrada.html"
+                  class="list-group-item list-group-item-action px-0"
+                  >Clásicos
+                  <span class="badge bg-secondary float-end">8</span></a
+                >
+                <a
+                  href="./pages/404.html"
+                  class="list-group-item list-group-item-action px-0"
+                  >Tecnología
+                  <span class="badge bg-secondary float-end">10</span></a
+                >
+                <a
+                  href="./pages/404.html"
+                  class="list-group-item list-group-item-action px-0"
+                  >Consejos
+                  <span class="badge bg-secondary float-end">15</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="ad-box" id="advertising">
+            <span class="small text-uppercase">Publicidad</span>
+            <i class="bi bi-car-front-fill display-6 my-2"></i>
+            <strong>Tu próximo viaje empieza acá</strong>
+            <p class="small mb-0">Espacio publicitario del blog.</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <a class="navbar-brand text-white fw-bold fs-4" href="index.html"
+              ><i class="bi bi-speedometer2 me-2"></i>RUTA MOTOR</a
+            >
+            <p class="text-white-50 mt-3">
+              Un blog dedicado al mundo automotor: novedades, historias,
+              tecnología y pasión por los vehículos.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <h3 class="h6 text-uppercase fw-bold">Seguinos</h3>
+            <div class="socials mt-3">
+              <a href="https://www.instagram.com/" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://www.youtube.com/" aria-label="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="https://twitter.com/" aria-label="X"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <h3 class="h6 text-uppercase fw-bold">Información</h3>
+            <ul class="list-unstyled text-white-50 mt-3">
+              <li class="mb-2">
+                <a class="footer-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="mb-2">
+                <a class="footer-link" href="./pages/nosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="./pages/404.html"
+                  >Términos y condiciones</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <p class="small text-white-50 mb-0 text-center">
+          © 2026 Ruta Motor. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <input class="modal-toggle" type="checkbox" id="subscribeToggle" />
+    <div class="css-modal">
+      <div class="css-modal-box">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h5 fw-bold mb-0">Suscribite a Ruta Motor</h2>
+          <label
+            for="subscribeToggle"
+            class="btn-close"
+            aria-label="Cerrar"
+          ></label>
+        </div>
+        <p class="text-secondary">
+          Recibí novedades y nuevos artículos directamente en tu email.
+        </p>
+        <form>
+          <label class="form-label">Nombre</label
+          ><input class="form-control mb-3" required /><label class="form-label"
+            >Email</label
+          ><input type="email" class="form-control mb-3" required /><button
+            class="btn btn-warning"
+          >
+            Suscribirme
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

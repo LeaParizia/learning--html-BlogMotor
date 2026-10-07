@@ -1,0 +1,291 @@
+body{
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  background:#f7f7f8;
+  color:#1b1b1b;
+  padding-top:72px
+}
+
+.navbar-brand{
+  letter-spacing:.06em
+}
+
+.hero-slider{
+  position:relative
+}
+
+.carousel-item{
+  height:72vh;
+  min-height:430px;
+  max-height:720px
+}
+
+.carousel-item img{
+  height:100%;
+  object-fit:cover;
+  filter:brightness(.62)
+}
+
+.carousel-caption{
+  bottom:16%;
+  text-shadow:0 2px 12px rgba(0,0,0,.55)
+}
+
+.section-kicker{
+  font-size:.76rem;
+  font-weight:800;
+  letter-spacing:.16em;
+  color:#a66a00
+}
+
+.post-card{
+  overflow:hidden;
+  transition:.2s
+}
+
+.post-card:hover{
+  transform:translateY(-3px)
+}
+
+.post-img{
+  width:100%;
+  height:100%;
+  min-height:240px;
+  object-fit:cover
+}
+
+.ad-box{
+  background:#252a2e;
+  color:#fff;
+  border-radius:1rem;
+  padding:2rem;
+  text-align:center;
+  min-height:220px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center
+}
+
+.ad-box .small{
+  letter-spacing:.15em;
+  color:#ffc107
+}
+
+.site-footer{
+  margin-top:3rem
+}
+
+.socials{
+  display:flex;
+  gap:1rem
+}
+
+.socials a{
+  color:#fff;
+  font-size:1.35rem;
+  text-decoration:none
+}
+
+.footer-link{
+  color:rgba(255,255,255,.65);
+  text-decoration:none
+}
+
+.footer-link:hover{
+  color:#ffc107
+}
+
+.article-cover{
+  max-height:560px;
+  object-fit:cover
+}
+
+.comment{
+  border-bottom:1px solid #ddd;
+  padding:1rem 0
+}
+
+.comment span{
+  color:#888;
+  font-size:.9rem
+}
+
+.gallery-card{
+  background:#fff;
+  border-radius:1rem;
+  overflow:hidden;
+  box-shadow:0 .25rem 1rem rgba(0,0,0,.08);
+  height:100%
+}
+
+.gallery-card img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  display:block
+}
+
+.gallery-card div{
+  padding:1rem
+}
+
+.gallery-card strong,.gallery-card small{
+  display:block
+}
+
+.gallery-card small{
+  color:#777
+}
+
+.team-card{
+  background:#fff;
+  border-radius:1rem;
+  padding:1.5rem;
+  box-shadow:0 .25rem 1rem rgba(0,0,0,.07);
+  height:100%
+}
+
+.team-card img{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+  border-radius:50%;
+  border:5px solid #f0f0f0
+}
+
+.quote-section{
+  background:#fff
+}
+
+.login-body{
+  background:#eceeef
+}
+
+.login-card{
+  max-width:1000px;
+  margin:auto;
+  border-radius:1.25rem;
+  overflow:hidden
+}
+
+.login-image{
+  min-height:620px;
+  background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.6)),
+  url("https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=85") 
+  center/cover;
+  display:flex;
+  align-items:end;
+  padding:3rem;
+  color:#fff
+}
+
+.error-page{
+  min-height:100vh;
+  background:#f2f3f4
+}
+
+.slider-toggle{
+  position:absolute;
+  opacity:0
+}
+
+.css-slider{
+  position:relative;
+  overflow:hidden
+}
+
+.css-slider .carousel-item{
+  display:none!important
+}
+
+.slider-toggle#slide1:checked~.css-slider 
+.slide-one,.slider-toggle#slide2:checked~.css-slider .slide-two,
+.slider-toggle#slide3:checked~.css-slider 
+.slide-three{
+  display:block!important
+}
+
+.slider-controls{
+  position:absolute;
+  z-index:20;
+  bottom:20px;
+  left:0;
+  right:0;
+  text-align:center
+}
+
+.slider-controls label{
+  display:inline-flex;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  align-items:center;
+  justify-content:center;
+  background:rgba(255,255,255,.9);
+  margin:0 4px;
+  cursor:pointer;
+  font-weight:700
+}
+
+.modal-toggle{
+  position:absolute;
+  opacity:0
+}
+
+.css-modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:2000;
+  background:rgba(0,0,0,.65);
+  align-items:center;
+  justify-content:center;
+  padding:1rem
+}
+
+.modal-toggle#subscribeToggle:checked~.css-modal{
+  display:flex
+}
+
+.css-modal-box{background:#fff;
+  border-radius:1rem;
+  padding:1.5rem;
+  max-width:500px;
+  width:100%;
+  box-shadow:0 1rem 3rem rgba(0,0,0,.3)
+}
+
+.subscription-static{
+  background:#f7f7f8
+
+}
+
+@media(max-width:575.98px)
+{body{
+  padding-top:70px
+}
+.carousel-item{
+  height:58vh;
+  min-height:380px
+}
+.carousel-caption h1,.carousel-caption h2{
+  font-size:1.7rem
+}
+.post-img{
+  height:230px;
+  min-height:0
+}
+
+.ad-box{
+  display:none
+}
+
+.login-image{
+  min-height:300px
+}
+
+.team-card img{
+  width:130px;
+  height:130px
+}
+}
